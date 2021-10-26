@@ -1,9 +1,16 @@
 #!/bin/bash
 set -e
 zsh --version
-# copy config files
-cp ./.zshrc ${HOME}
-cp ./.p10k.zsh ${HOME}
+# symlink config files
+if [ -f ~/.zshrc ]; then
+    mv ~/.zshrc ~/.zshrc_backup
+fi
+ln -s ${PWD}/.zshrc ~/.zshrc
+
+if [ -f ~/.p10k.zsh ]; then
+    mv ~/.p10k.zsh ~/.p10k.zsh_backup
+fi
+ln -s ${PWD}/.p10k.zsh ~/.p10k.zsh
 
 # check if oh my zsh is installed
 if [ -d ~/.oh-my-zsh ]; then

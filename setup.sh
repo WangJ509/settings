@@ -1,6 +1,10 @@
 #!/bin/bash
 set -e
 zsh --version
+# copy config files
+cp ./.zshrc ${HOME}
+cp ./.p10k.zsh ${HOME}
+
 # check if oh my zsh is installed
 if [ -d ~/.oh-my-zsh ]; then
     echo "oh-my-zsh is installed"
@@ -16,9 +20,5 @@ else
     echo "powerlevel10k is not installed"
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 fi
-
-# copy config files
-cp ./.zshrc ${HOME}
-cp ./.p10k.zsh ${HOME}
 
 echo "done"

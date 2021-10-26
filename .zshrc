@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/jasonwang/.oh-my-zsh"
+export ZSH="${HOME}/.oh-my-zsh"
 export PATH=/opt/homebrew/bin:$PATH
 
 # Set name of the theme to load --- if set to "random", it will

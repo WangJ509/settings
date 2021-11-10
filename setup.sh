@@ -1,16 +1,6 @@
 #!/bin/bash
 set -e
 zsh --version
-# symlink config files
-if [ -f ~/.zshrc ]; then
-    mv ~/.zshrc ~/.zshrc_backup
-fi
-ln -s ${PWD}/.zshrc ~/.zshrc
-
-if [ -f ~/.p10k.zsh ]; then
-    mv ~/.p10k.zsh ~/.p10k.zsh_backup
-fi
-ln -s ${PWD}/.p10k.zsh ~/.p10k.zsh
 
 # check if oh my zsh is installed
 if [ -d ~/.oh-my-zsh ]; then
@@ -41,5 +31,16 @@ else
     echo "syntax-highlighting is not installed"
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 fi
+
+# symlink config files
+if [ -f ~/.zshrc ]; then
+    mv ~/.zshrc ~/.zshrc_backup
+fi
+ln -s ${PWD}/.zshrc ~/.zshrc
+
+if [ -f ~/.p10k.zsh ]; then
+    mv ~/.p10k.zsh ~/.p10k.zsh_backup
+fi
+ln -s ${PWD}/.p10k.zsh ~/.p10k.zsh
 
 echo "done"

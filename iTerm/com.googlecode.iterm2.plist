@@ -366,19 +366,17 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xf700-0x300000</key>
+		<key>0xf700-0x300000-0x7e</key>
 		<dict>
 			<key>Action</key>
-			<integer>7</integer>
-			<key>Text</key>
+			<integer>25</integer>
+			<key>Label</key>
 			<string></string>
-		</dict>
-		<key>0xf701-0x300000</key>
-		<dict>
-			<key>Action</key>
-			<integer>6</integer>
 			<key>Text</key>
-			<string></string>
+			<string>Previous Mark
+Marks and Annotations.Previous Mark</string>
+			<key>Version</key>
+			<integer>1</integer>
 		</dict>
 		<key>0xf702-0x320000-0x7b</key>
 		<dict>
@@ -777,13 +775,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.965850830078125</real>
+				<real>0.998809814453125</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.89451050157092737</real>
+				<real>0.88588698227207929</real>
 				<key>Red Component</key>
-				<real>0.85884028812870383</real>
+				<real>0.82942547183483839</real>
 			</dict>
 			<key>Guid</key>
 			<string>8C954A90-D948-4D09-A446-D908B39E8E79</string>
@@ -1142,13 +1140,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.516998291015625</real>
+				<real>0.602874755859375</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.44988130111778446</real>
+				<real>0.5562548941296086</real>
 				<key>Red Component</key>
-				<real>0.10652992129325867</real>
+				<real>0.33027667785063386</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -1184,6 +1182,41 @@
 			<string>/Users/jasonwang</string>
 		</dict>
 	</array>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>4</integer>
+	<key>PointerActions</key>
+	<dict>
+		<key>Button,1,1,,</key>
+		<dict>
+			<key>Action</key>
+			<string>kContextMenuPointerAction</string>
+		</dict>
+		<key>Button,2,1,,</key>
+		<dict>
+			<key>Action</key>
+			<string>kPasteFromClipboardPointerAction</string>
+		</dict>
+		<key>Gesture,ThreeFingerSwipeDown,,</key>
+		<dict>
+			<key>Action</key>
+			<string>kPrevWindowPointerAction</string>
+		</dict>
+		<key>Gesture,ThreeFingerSwipeLeft,,</key>
+		<dict>
+			<key>Action</key>
+			<string>kPrevTabPointerAction</string>
+		</dict>
+		<key>Gesture,ThreeFingerSwipeRight,,</key>
+		<dict>
+			<key>Action</key>
+			<string>kNextTabPointerAction</string>
+		</dict>
+		<key>Gesture,ThreeFingerSwipeUp,,</key>
+		<dict>
+			<key>Action</key>
+			<string>kNextWindowPointerAction</string>
+		</dict>
+	</dict>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>

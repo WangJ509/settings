@@ -12,9 +12,9 @@ if [ -f ~/.p10k.zsh ]; then
 fi
 ln -s ${PWD}/.p10k.zsh ~/.p10k.zsh
 
-# check if oh my zsh is installed
-if [ -d ~/.oh-my-zsh ]; then
-    echo "oh-my-zsh is installed"
+# Install On-My-Zsh
+if [ ! -d $HOME/.oh-my-zsh ]; then
+    sh -c "$(curl https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended
 else
     echo "oh-my-zsh is not installed"
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

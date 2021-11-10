@@ -17,7 +17,7 @@ if [ -d ~/.oh-my-zsh ]; then
     echo "oh-my-zsh is installed"
 else
     echo "oh-my-zsh is not installed"
-    sh -c "$(curl https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended
+    wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
 fi
 
 # check if powerlevel10l is installed
@@ -41,7 +41,5 @@ else
     echo "syntax-highlighting is not installed"
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 fi
-
-source ${HOME}/.zshrc
 
 echo "done"

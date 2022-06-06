@@ -1,1 +1,1 @@
-open your shell, and enter ```bash -x setup.sh```
+open your shell, and enter ```bash setup.sh```

@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>new-moon</key>
@@ -348,7 +350,11 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>8C954A90-D948-4D09-A446-D908B39E8E79</string>
+	<key>DefaultTabStopWidth</key>
+	<integer>4</integer>
 	<key>DoubleClickPerformsSmartSelection</key>
+	<true/>
+	<key>EnableAPIServer</key>
 	<true/>
 	<key>GlobalKeyMap</key>
 	<dict>
@@ -1121,7 +1127,7 @@ Marks and Annotations.Previous Mark</string>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>0</integer>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1163,7 +1169,7 @@ Marks and Annotations.Previous Mark</string>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
-			<false/>
+			<true/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
@@ -1182,6 +1188,10 @@ Marks and Annotations.Previous Mark</string>
 			<string>/Users/jasonwang</string>
 		</dict>
 	</array>
+	<key>OpenFileInNewWindows</key>
+	<true/>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PasteTabToStringTabStopSize</key>
 	<integer>4</integer>
 	<key>PointerActions</key>
@@ -1217,10 +1227,14 @@ Marks and Annotations.Previous Mark</string>
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

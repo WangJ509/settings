@@ -7,7 +7,7 @@ if [ -d ~/.oh-my-zsh ]; then
     echo "oh-my-zsh is installed"
 else
     echo "oh-my-zsh is not installed"
-    wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
 # check if powerlevel10l is installed
@@ -42,5 +42,7 @@ if [ -f ~/.p10k.zsh ]; then
     mv ~/.p10k.zsh ~/.p10k.zsh_backup
 fi
 ln -s ${PWD}/.p10k.zsh ~/.p10k.zsh
+
+curl -O https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
 
 echo "done"

@@ -120,9 +120,6 @@ source $ZSH/oh-my-zsh.sh
 alias ntest="ping 8.8.8.8"
 
 
-export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH"
-export PATH="/Users/jasonwang/go/bin:$PATH"
-
 # This speeds up pasting w/ autosuggest
 # https://github.com/zsh-users/zsh-autosuggestions/issues/238
 pasteinit() {
@@ -143,8 +140,12 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # export PATH="/opt/homebrew/opt/python@3.9/bin:$PATH"
 eval "$(pyenv init --path)"
+export PATH="/Users/jason/.pyenv/versions/3.10.5/bin:$PATH"
+
 export PATH="/opt/homebrew/Cellar/mtr/0.94/sbin:$PATH"
 export PATH="/Users/jasonwang/.local/bin:$PATH"
+
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
